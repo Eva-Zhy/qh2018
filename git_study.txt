@@ -1,2 +1,2 @@
-study githubnew textstudy github
+study github
 new text
