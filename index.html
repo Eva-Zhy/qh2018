@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/layout.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="js/jquery.transit.js"></script>
+</head>
+<body>
+
+<div>
+    <audio src="media/P1.mp3" id="P1"></audio>
+    <audio src="media/P2_chanpwang.mp3" id="P2_chanpwang"></audio>
+    <audio src="media/P2_chengxuyuan1.mp3" id="P2_chengxuyuan1"></audio>
+    <audio src="media/P2_chengxuyuan2.mp3" id="P2_chengxuyuan2"></audio>
+    <audio src="media/P2_chengxuyuan3.mp3" id="P2_chengxuyuan3"></audio>
+    <audio src="media/P2_shejishi1.mp3" id="P2_shejishi1"></audio>
+    <audio src="media/P2_shejishi2.mp3" id="P2_shejishi2"></audio>
+    <audio src="media/P2_shejishi3.mp3" id="P2_shejishi3"></audio>
+    <audio src="media/P2_yunying1.mp3" id="P2_yunying1"></audio>
+    <audio src="media/P2_yunying2.mp3" id="P2_yunying2"></audio>
+    <audio src="media/P2_zongcai1.mp3" id="P2_zongcai1"></audio>
+    <audio src="media/P3.mp3" id="P3"></audio>
+    <audio src="media/P5_01.mp3" id="P5_01"></audio>
+    <audio src="media/P5_10.mp3" id="P5_10"></audio>
+    <audio src="media/P5_11.mp3" id="P5_11"></audio>
+    <audio src="media/P6.mp3" id="P6"></audio>
+    <audio src="media/P7.mp3" id="P7"></audio>
+    <audio src="media/P8.mp3" id="P8"></audio>
+    <audio src="media/P9_01.mp3" id="P9_01"></audio>
+    <audio src="media/P9_05.mp3" id="P9_05"></audio>
+    <audio src="media/P9_08.mp3" id="P9_08"></audio>
+    <audio src="media/P9_12.mp3" id="P9_12"></audio>
+    <audio src="media/P9_14.mp3" id="P9_14"></audio>
+    <audio src="media/P10-02-P13.mp3" id="P10_02_P13"></audio>
+    <audio src="media/P14.mp3" id="P14"></audio>
+    <audio src="media/P15_01_1.mp3" id="P15_01_1"></audio>
+    <audio src="media/P15_01_2.mp3" id="P15_01_2"></audio>
+    <audio src="media/P16.mp3" id="P16"></audio>
+</div>
+
+<div class="dont-click">
+</div>
+
+<div id="page1" class="page" style="z-index: 10;">
+    <img id="page1_1" src="img/page1/P1-01.png" class="img-css">
+    <img id="page1_2" src="img/page1/P1-02.png" class="img-css">
+    <img id="page1_3" src="img/page1/P1-03.png" class="img-css">
+    <img id="page1_4" src="img/page1/P1-04.png" class="img-css">
+    <img id="page1_5" src="img/page1/P1-05.png" class="img-css">
+</div>
+<div id="page2" class="page" style="z-index: 1;">
+    <img id="page2_1" src="img/page2/P2-01.png"
+         style="display: block; "
+         class="img-css page2_img">
+    <img id="page2_2" src="img/page2/P2-02.png" style="display: block;" class="img-css page2_img">
+    <img id="page2_3" src="img/page2/P2-03.png" style="display: block;" class="img-css page2_img">
+    <img id="page2_4" src="img/page2/P2-04.png" style="display: block;" class="img-css page2_img">
+    <img id="page2_5" src="img/page2/P2-05.png"
+         style="display: block; left: 0; top: 0; width: 100%; height: auto; transform:scale(0);"
+         class="img-css page2_img">
+    <img id="page2_6" src="img/page2/P2-06.png" style="display: block;" class="img-css page2_img">
+    <img id="page2_7" src="img/page2/P2-07.png" style="display: block;" class="img-css page2_img">
+    <img id="page2_8" src="img/page2/P2-08.png" style="display: block;" class="img-css page2_img">
+    <img id="page2_9" src="img/page2/P2-09.png" style="display: block;" class="img-css page2_img">
+    <img id="page2_10" src="img/page2/P2-10.png" style="display: block;" class="img-css page2_img">
+</div>
+<div id="page3" class="page" style="z-index: 1;">
+    <img id="page3_1" src="img/page3/P3-01.png" class="img-css">
+    <img id="page3_2" src="img/page3/P3-02.png" class="img-css">
+    <img id="page3_3" src="img/page3/P3-03.png" class="img-css">
+</div>
+
+<div id="page4" class="page" style="z-index: 1;">
+    <img id="page4_1" src="img/page4/P4-01-01.png" class="img-css">
+    <img id="page4_2" src="img/page4/P4-02-2.jpg" class="img-css">
+    <img id="page4_3" src="img/page4/P4-02-2-btn.png" class="P4-btn">
+    <img id="dianji4" style="display: block; width: 5rem; bottom: 1rem; z-index: 123;" src="img/page6/dianji.png" class="btn2-css donghua">
+</div>
+
+<div id="page5" class="page" style="z-index: 1;">
+    <img id="page5_1" src="img/page5/P5-01.png" class="img-css">
+    <img id="page5_2" src="img/page5/P5-02.png" class="img-css">
+    <img id="page5_3" src="img/page5/P5-03.png" class="img-css">
+    <img id="page5_4" src="img/page5/P5-04.png" class="img-css">
+    <img id="page5_5" src="img/page5/P5-05.png" class="img-css">
+    <img id="page5_6" src="img/page5/P5-06.png" class="img-css">
+    <img id="page5_7" src="img/page5/P5-07.png" class="img-css">
+    <img id="page5_8" src="img/page5/P5-08.png" class="img-css">
+    <img id="page5_9" src="img/page5/P5-09.png" class="img-css">
+    <img id="page5_10" src="img/page5/P5-10.png" class="img-css">
+    <img id="page5_11" src="img/page5/P5-11.png" class="img-css">
+    <img id="page5_12" src="img/page5/P5-12.png" class="img-css">
+    <img id="page5_13" src="img/page5/P5-13.png" class="img-css">
+</div>
+
+<div id="page6" class="page" style="z-index: 1;">
+    <img id="page6_1" style="display: block;" src="img/page6/P601-01.png" class="img-css page2_img">
+    <img id="page6_2" style="display: block;" src="img/page6/P602-01.png" class="img-css page2_img">
+    <img id="page6_3" style="display: block;" src="img/page6/P603-01.png" class="img-css page2_img">
+    <img id="page6_4" style="display: block;" src="img/page6/P604-01.png" class="img-css page2_img">
+    <img id="page6_5" style="display: block;" src="img/page6/P605-01.png" class="img-css page2_img">
+    <img id="page6_6" style="display: block;" src="img/page6/P606-01.png" class="img-css page2_img">
+    <img id="page6_7" style="display: block;" src="img/page6/P607-01.png" class="img-css page2_img">
+    <img id="page6_8" style="display: block;" src="img/page6/P608-01.png" class="img-css page2_img">
+    <img id="page6_9" style="display: block;" src="img/page6/P609-01.png" class="img-css page2_img">
+    <img id="page6_10" style="display: block;" src="img/page6/P610-01.png" class="img-css page2_img">
+    <img id="page6_11" style="display: block;" src="img/page6/P611-01.png" class="img-css page2_img">
+    <img id="page6_12" style="display: block;" src="img/page6/P612-01.png" class="img-css page2_img">
+    <img id="page6_13" style="display: block;" src="img/page6/P613-01.png" class="img-css page2_img">
+    <img id="btn2" style="display: block;" src="img/page6/btn2.png" class="btn2-css">
+    <img id="btn1" style="display: block;" src="img/page6/btn1.png" class="btn1-css">
+    <img id="dianji" style="display: block;" src="img/page6/dianji.png" class="btn2-css donghua">
+</div>
+
+<div id="page7" class="page" style="z-index: 1;">
+    <img id="page7_1" src="img/page7/P7-02.png" class="img-css">
+    <img id="page7_2" src="img/page7/P7-03.png" class="img-css">
+    <img id="page7_3" src="img/page7/P7-04.png" class="img-css">
+    <img id="page7_4" src="img/page7/P7-05.png" class="img-css">
+    <img id="page7_5" src="img/page7/P7-06.png" class="img-css">
+    <img id="page7_6" src="img/page7/P7-07.png" class="img-css">
+    <img id="page7_7" src="img/page7/P7-08.png" class="img-css">
+    <img id="page7_8" src="img/page7/P7-09.png" class="img-css">
+</div>
+
+<div id="page8" class="page" style="z-index: 1;">
+    <img id="page8_1" src="img/page8/P8-01.png" class="img-css">
+    <img id="page8_2" src="img/page8/P8-02.png" class="img-css">
+    <img id="page8_3" src="img/page8/P8-03.png" class="img-css">
+    <img id="page8_4" src="img/page8/P8-04.png" class="img-css">
+    <img id="page8_5" src="img/page8/P8-05.png" class="img-css">
+    <img id="page8_6" src="img/page8/P8-06.png" class="img-css">
+    <img id="page8_7" src="img/page8/P8-07.png" class="img-css">
+    <img id="page8_8" src="img/page8/P8-08.png" class="img-css">
+    <img id="page8_9" src="img/page8/P8-09.png" class="img-css">
+</div>
+
+<div id="page9" class="page" style="z-index: 1;">
+    <img id="page9_1" src="img/page9/P9-01.png" class="img-css">
+    <img id="page9_2" src="img/page9/P9-02.png" class="img-css">
+    <img id="page9_3" src="img/page9/P9-03.png" class="img-css">
+    <img id="page9_4" src="img/page9/P9-04.png" class="img-css">
+    <img id="page9_5" src="img/page9/P9-05.png" class="img-css">
+    <img id="page9_6" src="img/page9/P9-06.png" class="img-css">
+    <img id="page9_7" src="img/page9/P9-07.png" class="img-css">
+    <img id="page9_8" src="img/page9/P9-08.png" class="img-css">
+    <img id="page9_9" src="img/page9/P9-09.png" class="img-css">
+    <img id="page9_10" src="img/page9/P9-10.png" class="img-css">
+    <img id="page9_11" src="img/page9/P9-11.png" class="img-css">
+    <img id="page9_12" src="img/page9/P9-12.png" class="img-css">
+    <img id="page9_13" src="img/page9/P9-13.png" class="img-css">
+    <img id="page9_14" src="img/page9/P9-14.png" class="img-css">
+    <img id="page9_15" src="img/page9/P9-15.png" class="img-css">
+    <img id="page9_16" src="img/page9/P9-16.png" class="img-css">
+    <img id="page9_17" src="img/page9/P9-17.png" class="img-css">
+    <img id="page9_18" src="img/page9/P9-18.png" class="img-css">
+</div>
+
+<div id="page10" class="page" style="z-index: 10;">
+    <img id="page10_1" src="img/page10/P10-01-01.png" class="img-css">
+    <img id="page10_2" src="img/page10/P10-02.png" class="img-css">
+</div>
+
+<div id="page11" class="page" style="z-index: 1;">
+    <img id="page11_1" style="display: block; position: absolute; z-index: 10;" src="img/page11/P0-01.png" class="img-css">
+    <img id="page11_2" style="display: block; position: absolute;" src="img/page11/P0-02.png" class="img-css">
+</div>
+
+<div id="page12" class="page" style="z-index: 1;">
+    <img id="page12_1" src="img/page12/P13-01.png" class="img-css">
+    <img id="page12_2" src="img/page12/P13-02.png" class="img-css">
+    <img id="page12_3" src="img/page12/P13-03.png" class="img-css">
+    <img id="page12_4" src="img/page12/P13-04.png" class="img-css">
+    <img id="page12_5" src="img/page12/P13-05.png" class="img-css">
+    <img id="page12_6" src="img/page12/P13-06.png" class="img-css">
+    <img id="page12_7" src="img/page12/P13-07.png" class="img-css">
+    <img id="page12_8" src="img/page12/P13-08.png" class="img-css">
+</div>
+
+<div id="page13" class="page" style="z-index: 1;">
+    <img id="page13_1" src="img/page13/P3-01.jpg" class="img-css">
+</div>
+
+<div id="page14" class="page" style="z-index: 1;">
+</div>
+
+<div id="page15" class="page" style="z-index: 1;">
+    <img id="page15_1" src="img/page15/15-01.png" class="img-css">
+    <img id="page15_2" src="img/page15/15-02.png" class="img-css">
+</div>
+
+<div id="page16" class="page" style="z-index: 1;">
+</div>
+
+<div id="page17" class="page" style="z-index: 1;">
+    <img id="page17_1" src="img/page17/P17-01.png" class="img-css">
+    <img id="page17_2" src="img/page17/P17-02.png" class="img-css">
+    <img id="page17_3" src="img/page17/P17-03.png" class="img-css">
+    <img id="page17_4" src="img/page17/P17-04-04.jpg" class="img-css">
+</div>
+<script>
+    var P1 = document.getElementById("P1");
+    var P2_chanpwang = document.getElementById("P2_chanpwang");
+    var P2_chengxuyuan1 = document.getElementById("P2_chengxuyuan1");
+    var P2_chengxuyuan2 = document.getElementById("P2_chengxuyuan2");
+    var P2_chengxuyuan3 = document.getElementById("P2_chengxuyuan3");
+    var P2_shejishi1 = document.getElementById("P2_shejishi1");
+    var P2_shejishi2 = document.getElementById("P2_shejishi2");
+    var P2_shejishi3 = document.getElementById("P2_shejishi3");
+    var P2_yunying1 = document.getElementById("P2_yunying1");
+    var P2_yunying2 = document.getElementById("P2_yunying2");
+    var P2_zongcai1 = document.getElementById("P2_zongcai1");
+    var P3 = document.getElementById("P3");
+    var P5_01 = document.getElementById("P5_01");
+    var P5_10 = document.getElementById("P5_10");
+    var P5_11 = document.getElementById("P5_11");
+    var P6 = document.getElementById("P6");
+    var P7 = document.getElementById("P7");
+    var P8 = document.getElementById("P8");
+    var P9_01 = document.getElementById("P9_01");
+    var P9_05 = document.getElementById("P9_05");
+    var P9_08 = document.getElementById("P9_08");
+    var P9_12 = document.getElementById("P9_12");
+    var P9_14 = document.getElementById("P9_14");
+    var P10_02_P13 = document.getElementById("P10_02_P13");
+    var P14 = document.getElementById("P14");
+    var P15_01_1 = document.getElementById("P15_01_1");
+    var P15_01_2 = document.getElementById("P15_01_2");
+    var P16 = document.getElementById("P16");
+
+    $(document).ready(function () {
+        audioAutoPlay();
+    });
+    function audioAutoPlay() {
+        P2_chanpwang.play();
+        P2_chanpwang.pause();
+        P2_chengxuyuan1.play();
+        P2_chengxuyuan1.pause();
+        P2_chengxuyuan2.play();
+        P2_chengxuyuan2.pause();
+        P2_chengxuyuan3.play();
+        P2_chengxuyuan3.pause();
+        P2_yunying1.play();
+        P2_yunying1.pause();
+        P2_yunying2.play();
+        P2_yunying2.pause();
+        P2_zongcai1.play();
+        P2_zongcai1.pause();
+        P2_yunying1.play();
+        P2_yunying1.pause();
+        P2_yunying2.play();
+        P2_yunying2.pause();
+        P2_zongcai1.play();
+        P2_zongcai1.pause();
+        P3.play();
+        P3.pause();
+        P5_01.play();
+        P5_01.pause();
+        P5_10.play();
+        P5_10.pause();
+        P5_11.play();
+        P5_11.pause();
+        P6.play();
+        P6.pause();
+        P7.play();
+        P7.pause();
+        P8.play();
+        P8.pause();
+        P9_01.play();
+        P9_01.pause();
+        P9_05.play();
+        P9_05.pause();
+        P9_08.play();
+        P9_08.pause();
+        P9_12.play();
+        P9_12.pause();
+        P9_14.play();
+        P9_14.pause();
+        P10_02_P13.play();
+        P10_02_P13.pause();
+        P14.play();
+        P14.pause();
+        P15_01_1.play();
+        P15_01_1.pause();
+        P15_01_2.play();
+        P15_01_2.pause();
+        P16.play();
+        P16.pause();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+//            P1.play();
+//            P1.pause();
+            P2_chanpwang.play();
+            P2_chanpwang.pause();
+            P2_chengxuyuan1.play();
+            P2_chengxuyuan1.pause();
+            P2_chengxuyuan2.play();
+            P2_chengxuyuan2.pause();
+            P2_chengxuyuan3.play();
+            P2_chengxuyuan3.pause();
+            P2_yunying1.play();
+            P2_yunying1.pause();
+            P2_yunying2.play();
+            P2_yunying2.pause();
+            P2_zongcai1.play();
+            P2_zongcai1.pause();
+            P2_yunying1.play();
+            P2_yunying1.pause();
+            P2_yunying2.play();
+            P2_yunying2.pause();
+            P2_zongcai1.play();
+            P2_zongcai1.pause();
+            P3.play();
+            P3.pause();
+            P5_01.play();
+            P5_01.pause();
+            P5_10.play();
+            P5_10.pause();
+            P5_11.play();
+            P5_11.pause();
+            P6.play();
+            P6.pause();
+            P7.play();
+            P7.pause();
+            P8.play();
+            P8.pause();
+            P9_01.play();
+            P9_01.pause();
+            P9_05.play();
+            P9_05.pause();
+            P9_08.play();
+            P9_08.pause();
+            P9_12.play();
+            P9_12.pause();
+            P9_14.play();
+            P9_14.pause();
+            P10_02_P13.play();
+            P10_02_P13.pause();
+            P14.play();
+            P14.pause();
+            P15_01_1.play();
+            P15_01_1.pause();
+            P15_01_2.play();
+            P15_01_2.pause();
+            P16.play();
+            P16.pause();
+        }, false);
+        document.addEventListener('YixinJSBridgeReady', function () {
+//            P1.play();
+//            P1.pause();
+            P2_chanpwang.play();
+            P2_chanpwang.pause();
+            P2_chengxuyuan1.play();
+            P2_chengxuyuan1.pause();
+            P2_chengxuyuan2.play();
+            P2_chengxuyuan2.pause();
+            P2_chengxuyuan3.play();
+            P2_chengxuyuan3.pause();
+            P2_yunying1.play();
+            P2_yunying1.pause();
+            P2_yunying2.play();
+            P2_yunying2.pause();
+            P2_zongcai1.play();
+            P2_zongcai1.pause();
+            P2_yunying1.play();
+            P2_yunying1.pause();
+            P2_yunying2.play();
+            P2_yunying2.pause();
+            P2_zongcai1.play();
+            P2_zongcai1.pause();
+            P3.play();
+            P3.pause();
+            P5_01.play();
+            P5_01.pause();
+            P5_10.play();
+            P5_10.pause();
+            P5_11.play();
+            P5_11.pause();
+            P6.play();
+            P6.pause();
+            P7.play();
+            P7.pause();
+            P8.play();
+            P8.pause();
+            P9_01.play();
+            P9_01.pause();
+            P9_05.play();
+            P9_05.pause();
+            P9_08.play();
+            P9_08.pause();
+            P9_12.play();
+            P9_12.pause();
+            P9_14.play();
+            P9_14.pause();
+            P10_02_P13.play();
+            P10_02_P13.pause();
+            P14.play();
+            P14.pause();
+            P15_01_1.play();
+            P15_01_1.pause();
+            P15_01_2.play();
+            P15_01_2.pause();
+            P16.play();
+            P16.pause();
+        }, false);
+    }
+</script>
+<script>
+    add_img(14, "2_", 0, 118);
+    add_img(16, "1_", 0, 118);
+
+    var details_img = $(".img-css");    //所有的图片
+    var img_len = details_img.length;
+    console.log("img_len", img_len);
+    // 开始页码
+    window.now_page = 1;
+    var max_page = 17;
+    $('.img-css').imagesLoaded(function () {
+        $(document).ready(function () {
+            var page_id = 'page' + now_page;
+            var page_num = document.getElementById(page_id).getElementsByTagName("img").length;
+            if (now_page == 1) {
+                page_ani(now_page, page_num, "", 700, [{audio_id: 'P1', time_out: 500}], "");
+            } else {
+                page_ani(now_page, page_num, "", "", "", "");
+            }
+        });
+    });
+
+    function page_ani(now_page, img_num, page_title, page_time, audio_array, sleep_time) {
+        var page_id = '';
+        page_id = '#page' + now_page + '_';
+        var jq_page_id = '#page' + now_page;
+        if (audio_array != "") {
+            for (var t = 0; t < audio_array.length; t++) {
+                (function (t) {
+                    setTimeout(function () {
+                        var audio_id_str = audio_array[t].audio_id;
+                        document.getElementById(audio_id_str).play();
+                    }, audio_array[t].time_out)
+                })(t);
+            }
+        }
+        if (page_time == "") {
+            page_time = 1300;
+        }
+        var i = 0;
+        var page_interval = setInterval(function () {
+            if (i == 0) {
+                $("title").html(page_title);
+                $(jq_page_id).css('display', 'block');
+            }
+            if (i != img_num) {
+                $(page_id + i).css('display', 'none');
+            }
+            i++;
+            $(page_id + i).css('display', 'block');
+            if (i > img_num) {
+                clearInterval(page_interval);
+                if (sleep_time != "") {
+                    setTimeout(function () {
+                        next_page(now_page);
+                    }, sleep_time);
+                } else {
+                    next_page(now_page);
+                }
+            }
+        }, page_time);
+    }
+
+    function next_page(now_page) {
+        if (now_page == 1) {
+            $('#page2').css('display', 'block');
+            $('#page1').fadeOut(1000, function () {
+                $('#page1').css('display', 'none');
+            });
+        } else if (now_page == 10) {
+            $('#page11').css('display', 'block');
+            $('#page10').fadeOut(1000, function () {
+                $('#page10').css('display', 'none');
+            });
+        } else {
+//         $(jq_page_id).css('display', 'none');
+        }
+        // 执行下一页
+        now_page = now_page + 1;
+        if (now_page <= max_page) {
+            page_id = 'page' + now_page;
+            var page_num = document.getElementById(page_id).getElementsByTagName("img").length;
+            if (now_page == 2) {
+                page2_ani(now_page);
+            } else if (now_page == 4) {
+                page4_ani(now_page);
+            } else if (now_page == 5) {
+                page_ani5(now_page, 1200)
+            } else if (now_page == 6) {
+                page_ani6(now_page);
+            } else if (now_page == 7) {
+                page_ani7(now_page);
+            } else if (now_page == 8) {
+                page_ani(now_page, page_num, "肤白貌美大长腿", 1300, [{audio_id: 'P8', time_out: 1500}], "");
+            } else if (now_page == 9) {
+                page_ani9(now_page, 1200);
+//                page_ani(now_page, page_num, "总煎大魔头", 1500, [{audio_id: 'P9', time_out: 1500}], "");
+            } else if (now_page == 10) {
+                page_ani(now_page, page_num, "文件预览", 2000, [{audio_id: 'P10_02_P13', time_out: 1500}], "");
+            } else if (now_page == 11) {
+                page_ani11(now_page, "微信");
+            } else if (now_page == 12) {
+                page_ani(now_page, page_num, "人人都是产品经理群", 2000, "", "");
+            } else if (now_page == 13) {
+                page_ani(now_page, page_num, "", 10, "", "");
+            } else if (now_page == 14) {
+                page_ani(now_page, page_num, "", 70, [{audio_id: 'P14', time_out: 100}], "");
+            } else if (now_page == 15) {
+                page_ani(now_page, page_num, "总煎大魔头", 2000, "", "");
+            } else if (now_page == 16) {
+                page_ani(now_page, page_num, "", 70, [{audio_id: 'P16', time_out: 100}], "");
+            } else if (now_page == 17) {
+                page_ani(now_page, page_num, "", 2100, "", "");
+            } else {
+                page_ani(now_page, page_num, "", "", "", "");
+            }
+        }
+    }
+
+    function page2_ani(now_page) {
+        $("#page2").css('display', 'block');
+        setTimeout(function () {
+            setTimeout(function () {
+                P2_chanpwang.play();
+            }, 200);
+            $("#page2_5").transition({scale: 1.0}, 1000);
+
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_chengxuyuan3.play();
+                }, 1000);
+                $("#page2_2").animate({left: '-100%'}, 5200);
+            }, 2000);
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_chengxuyuan1.play();
+                }, 1000);
+                $("#page2_3").animate({left: '-100%'}, 4500);
+            }, 3000);
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_zongcai1.play();
+                }, 1000);
+                $("#page2_4").animate({left: '-100%'}, 4500);
+            }, 4000);
+
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_shejishi1.play();
+                }, 1000);
+                $("#page2_1").animate({left: '-100%'}, 4000);
+            }, 4500);
+
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_chengxuyuan2.play();
+                }, 1000);
+                $("#page2_6").animate({left: '-100%'}, 4500);
+            }, 5000);
+
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_shejishi2.play();
+                }, 1000);
+                $("#page2_7").animate({left: '-100%'}, 4200);
+            }, 6000);
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_yunying2.play();
+                }, 1000);
+                $("#page2_8").animate({left: '-100%'}, 4600);
+            }, 7000);
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_yunying1.play();
+                }, 1000);
+                $("#page2_9").animate({left: '-100%'}, 4000);
+            }, 8000);
+            setTimeout(function () {
+                setTimeout(function () {
+                    P2_shejishi3.play();
+                }, 1000);
+                $("#page2_10").animate({left: '-100%'}, 4200);
+            }, 9000);
+        }, 1000);
+
+        setTimeout(function () {
+            // 隐藏page
+            // 切换下一页
+            $('#page2').css('display', 'none');
+            now_page++;
+            var page_num = document.getElementById('page3').getElementsByTagName("img").length;
+            page_ani(now_page, page_num, "", 1050, [{audio_id: 'P3', time_out: 500}], "");
+        }, 14000);
+    }
+
+
+    function page4_ani(now_page) {
+        $("#page4").css('display', 'block');
+        $("#page4_1").css('display', 'block');
+
+        setTimeout(function () {
+            $(".dont-click").css('display', 'none');
+            $("#page4_1").css('display', 'none');
+            $("#page4_2").css('display', 'block');
+            $("#page4_3").css('display', 'block');
+            $("#dianji4").animate({opacity: 1}, 1000);
+
+            $("#page4_3").click(function () {
+                $(".dont-click").css('display', 'block');
+                now_page++;
+                page_ani5(now_page, 1200);
+            });
+
+            $("#dianji4").click(function () {
+                $(".dont-click").css('display', 'block');
+                now_page++;
+                page_ani5(now_page, 1200);
+            });
+        }, 1500);
+    }
+    function page_ani5(now_page, img_time) {
+        now_page++;
+        $('title').html('肤白貌美大长腿');
+        $("#page4").css('display', 'none');
+        $("#page5").css('display', 'block');
+        $("#page5_1").css('display', 'block');
+        P5_01.play();
+        setTimeout(function () {
+            $("#page5_1").css('display', 'none');
+            $("#page5_2").css('display', 'block');
+            setTimeout(function () {
+                $("#page5_2").css('display', 'none');
+                $("#page5_3").css('display', 'block');
+                setTimeout(function () {
+                    $("#page5_3").css('display', 'none');
+                    $("#page5_4").css('display', 'block');
+                    setTimeout(function () {
+                        $("#page5_4").css('display', 'none');
+                        $("#page5_5").css('display', 'block');
+                        setTimeout(function () {
+                            $("#page5_5").css('display', 'none');
+                            $("#page5_6").css('display', 'block');
+                            setTimeout(function () {
+                                $("#page5_6").css('display', 'none');
+                                $("#page5_7").css('display', 'block');
+                                setTimeout(function () {
+                                    $("#page5_7").css('display', 'none');
+                                    $("#page5_8").css('display', 'block');
+                                    setTimeout(function () {
+                                        $("#page5_8").css('display', 'none');
+                                        $("#page5_9").css('display', 'block');
+                                        P5_10.play();
+                                        setTimeout(function () {
+                                            $("#page5_9").css('display', 'none');
+                                            $("#page5_10").css('display', 'block');
+                                            setTimeout(function () {
+                                                $("#page5_10").css('display', 'none');
+                                                $("#page5_11").css('display', 'block');
+                                                setTimeout(function () {
+                                                    $("#page5_11").css('display', 'none');
+                                                    $("#page5_12").css('display', 'block');
+                                                    setTimeout(function () {
+                                                        $("#page5_12").css('display', 'none');
+                                                        $("#page5_13").css('display', 'block');
+                                                        P5_11.play();
+                                                        setTimeout(function () {
+                                                            page_ani6(now_page);
+                                                        }, 6000)
+                                                    }, img_time);
+                                                }, img_time);
+                                            }, img_time);
+                                        }, 4000);
+                                    }, img_time);
+                                }, img_time);
+                            }, img_time);
+                        }, img_time);
+                    }, img_time);
+                }, img_time);
+            }, img_time);
+        }, 3000);
+    }
+    function page_ani6(now_page) {
+        $("#page6").css('display', 'block');
+        setTimeout(function () {
+            setTimeout(function () {
+                P6.play();
+            }, 200);
+            setTimeout(function () {
+                $("#page6_1").animate({left: '-100%'}, 4500);
+            }, 1500);
+            setTimeout(function () {
+                $("#page6_2").animate({left: '-100%'}, 4500);
+            }, 3500);
+            setTimeout(function () {
+                $("#page6_3").animate({left: '-100%'}, 4500);
+            }, 5000);
+            setTimeout(function () {
+                $("#page6_5").animate({left: '-100%'}, 4500);
+            }, 7500);
+            setTimeout(function () {
+                $("#page6_6").animate({left: '-100%'}, 4500);
+            }, 9000);
+            setTimeout(function () {
+                $("#page6_7").animate({left: '-100%'}, 4500);
+            }, 10000);
+            setTimeout(function () {
+                $("#page6_8").animate({left: '-100%'}, 4500);
+            }, 14000);
+            setTimeout(function () {
+                $("#page6_9").animate({left: '-100%'}, 4500);
+            }, 17000);
+            setTimeout(function () {
+                $("#page6_10").animate({left: '-100%'}, 4500);
+            }, 18000);
+            setTimeout(function () {
+                $("#page6_11").animate({left: '-100%'}, 4500);
+            }, 19000);
+            setTimeout(function () {
+                $("#page6_12").animate({left: '-100%'}, 4500);
+            }, 20000);
+            setTimeout(function () {
+                $("#page6_13").animate({left: '-100%'}, 4500);
+            }, 22000);
+            setTimeout(function () {
+                $("#page6_4").animate({left: '-100%'}, 4500);
+            }, 23000);
+        }, 1000);
+
+        setTimeout(function () {
+            $(".dont-click").css('display', 'none');
+            $("#dianji").animate({opacity: 1}, 1000);
+
+            $('#dianji').click(function () {
+                $('#page6').css('display', 'none');
+                $(".dont-click").css('display', 'block');
+                now_page++;
+                page_ani7(now_page);
+            });
+            $('#btn1').click(function () {
+                $('#page6').css('display', 'none');
+                $(".dont-click").css('display', 'block');
+                now_page++;
+                page_ani7(now_page);
+            });
+        }, 28000)
+    }
+
+    function page_ani7(now_page) {
+        $("#page7").css('display', 'block');
+        $("#page7_1").css('display', 'block');
+        setTimeout(function () {
+            P7.play();
+            setTimeout(function () {
+                $("#page7_1").css('display', 'none');
+                $("#page7_2").css('display', 'block');
+                setTimeout(function () {
+                    $("#page7_2").css('display', 'none');
+                    $("#page7_3").css('display', 'block');
+                    setTimeout(function () {
+                        $("#page7_3").css('display', 'none');
+                        $("#page7_4").css('display', 'block');
+                        setTimeout(function () {
+                            $("#page7_4").css('display', 'none');
+                            $("#page7_5").css('display', 'block');
+                            setTimeout(function () {
+                                $("#page7_5").css('display', 'none');
+                                $("#page7_6").css('display', 'block');
+                                setTimeout(function () {
+                                    $("#page7_6").css('display', 'none');
+                                    $("#page7_7").css('display', 'block');
+                                    setTimeout(function () {
+                                        $("#page7_7").css('display', 'none');
+                                        $("#page7_8").css('display', 'block');
+                                        now_page++;
+                                        setTimeout(function () {
+                                            var page_num = document.getElementById('page8').getElementsByTagName("img").length;
+                                            page_ani(now_page, page_num, "肤白貌美大长腿", 1300, [{
+                                                audio_id: 'P8',
+                                                time_out: 1500
+                                            }], "");
+                                        }, 1500);
+                                    }, 4000);
+                                }, 3000);
+                            }, 3000);
+                        }, 4000);
+                    }, 5500);
+                }, 3000);
+            }, 1800);
+        }, 100)
+    }
+
+    function page_ani9(now_page, img_time) {
+        $("title").html("总煎大魔头");
+        now_page++;
+        $("#page8").css('display', 'none');
+        $("#page9").css('display', 'block');
+        $("#page9_1").css('display', 'block');
+        setTimeout(function () {
+            P9_01.play();
+        },100);
+        setTimeout(function () {
+            $("#page9_1").css('display', 'none');
+            $("#page9_2").css('display', 'block');
+
+            setTimeout(function () {
+                $("#page9_1").css('display', 'none');
+                $("#page9_2").css('display', 'block');
+                setTimeout(function () {
+                    $("#page9_2").css('display', 'none');
+                    $("#page9_3").css('display', 'block');
+                    setTimeout(function () {
+                        $("#page9_3").css('display', 'none');
+                        $("#page9_4").css('display', 'block');
+                        setTimeout(function () {
+                            $("#page9_4").css('display', 'none');
+                            $("#page9_5").css('display', 'block');
+                            P9_05.play();
+                            setTimeout(function () {
+                                $("#page9_5").css('display', 'none');
+                                $("#page9_6").css('display', 'block');
+                                setTimeout(function () {
+                                    $("#page9_6").css('display', 'none');
+                                    $("#page9_7").css('display', 'block');
+                                    setTimeout(function () {
+                                        P9_08.play();
+                                        $("#page9_7").css('display', 'none');
+                                        $("#page9_8").css('display', 'block');
+                                        setTimeout(function () {
+                                            $("#page9_8").css('display', 'none');
+                                            $("#page9_9").css('display', 'block');
+                                            setTimeout(function () {
+                                                $("#page9_9").css('display', 'none');
+                                                $("#page9_10").css('display', 'block');
+                                                setTimeout(function () {
+                                                    $("#page9_10").css('display', 'none');
+                                                    $("#page9_11").css('display', 'block');
+                                                    setTimeout(function () {
+                                                        $("#page9_11").css('display', 'none');
+                                                        $("#page9_12").css('display', 'block');
+                                                        setTimeout(function () {
+                                                            $("#page9_12").css('display', 'none');
+                                                            $("#page9_13").css('display', 'block');
+                                                            setTimeout(function () {
+                                                                $("#page9_13").css('display', 'none');
+                                                                $("#page9_14").css('display', 'block');
+                                                                setTimeout(function () {
+                                                                    P9_12.play();
+                                                                    $("#page9_14").css('display', 'none');
+                                                                    $("#page9_15").css('display', 'block');
+//                                                                    P9_14.play();
+                                                                    setTimeout(function () {
+                                                                        $("#page9_15").css('display', 'none');
+                                                                        $("#page9_16").css('display', 'block');
+                                                                        setTimeout(function () {
+                                                                            $("#page9_16").css('display', 'none');
+                                                                            $("#page9_17").css('display', 'block');
+                                                                            setTimeout(function () {
+                                                                                $("#page9_17").css('display', 'none');
+                                                                                $("#page9_18").css('display', 'block');
+                                                                                setTimeout(function () {
+                                                                                    var page_num = document.getElementById('page10').getElementsByTagName("img").length;
+                                                                                    page_ani(now_page, page_num, "文件预览", 2000, [{
+                                                                                        audio_id: 'P10_02_P13',
+                                                                                        time_out: 1800
+                                                                                    }], "");
+                                                                                }, 1000);
+                                                                            }, img_time);
+                                                                        }, img_time);
+                                                                    }, img_time);
+                                                                }, img_time);
+                                                            }, img_time);
+                                                        }, img_time);
+                                                    }, img_time);
+                                                }, img_time);
+                                            }, img_time);
+                                        }, img_time);
+                                    }, img_time);
+                                }, img_time);
+                            }, 4800);
+                        }, img_time);
+                    }, img_time);
+                }, img_time);
+            }, img_time);
+        }, 5000);
+    }
+
+    function page_ani11(now_page, wx_title) {
+        $("title").html(wx_title);
+        now_page++;
+        $("#page11").css('display','block');
+        setTimeout(function () {
+            $('#page11_1').animate({opacity: 0}, 1000);
+            setTimeout(function () {
+                var page_num = document.getElementById('page12').getElementsByTagName("img").length;
+                page_ani(now_page, page_num, "人人都是产品经理群", 2000, "", "");
+            },1500);
+        },1900);
+    }
+
+    function add_img(page_num, img_head, img_start, img_end) {
+        var add_html = '';
+        var page_id = 'page' + page_num;
+        var i = 1;
+        for (img_start; img_start <= img_end; img_start++) {
+            var img_id = page_id + '_' + i;
+            var img_src = 'img/page' + page_num + '/' + img_head;
+
+            if (img_start < 10) {
+                img_src = img_src + '0000' + img_start + '.png';
+            } else if (img_start > 9 && img_start < 100) {
+                img_src = img_src + '000' + img_start + '.png';
+            } else if (img_start > 99 && img_start < 1000) {
+                img_src = img_src + '00' + img_start + '.png';
+            }
+
+            add_html += "<img id='" + img_id + "' src='" + img_src + "' class='img-css'>";
+            i++;
+        }
+        var jq_page_id = "#" + page_id;
+        $(jq_page_id).append(add_html);
+    }
+
+</script>
+<script>
+    var _mtac = {};
+    (function () {
+        var mta = document.createElement("script");
+        mta.src = "https://pingjs.qq.com/h5/stats.js?v2.0.2";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500612073");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+    })();
+</script>
+</body>
+</html>
